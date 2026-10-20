@@ -11,6 +11,7 @@ import { FAQ } from '@/components/sections/FAQ';
 import { ContactLocation } from '@/components/sections/ContactLocation';
 import { EnquiryForm } from '@/components/sections/EnquiryForm';
 import { JsonLd } from '@/components/ui/JsonLd';
+import { Videos } from '@/components/sections/Videos';
 
 export default function HomePage() {
   return (
@@ -23,6 +24,7 @@ export default function HomePage() {
         <Services />
         <WhyChooseUs />
         <Projects />
+        <Videos />
         <Process />
         <EnquiryForm />
         <FAQ />

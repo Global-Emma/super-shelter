@@ -8,11 +8,14 @@ import Link from 'next/link';
 
 export function Projects() {
   const [filter, setFilter] = useState<'all' | 'residential' | 'commercial' | 'renovation'>('all');
+  const [showAllProjects, setShowAllProjects] = useState(false);
 
+  const uniqueProjects = [...new Map(siteConfig.projects.map((project) => [project.image, project])).values()];
   const filteredProjects =
     filter === 'all'
-      ? siteConfig.projects
-      : siteConfig.projects.filter((p) => p.category === filter);
+      ? uniqueProjects
+      : uniqueProjects.filter((project) => project.category === filter);
+  const visibleProjects = showAllProjects ? filteredProjects : filteredProjects.slice(0, 9);
 
   return (
     <section id="projects" className="py-20 bg-[#F3F5F7]">
@@ -20,7 +23,7 @@ export function Projects() {
         <SectionHeading
           eyebrow="Portfolio & Concepts"
           title="Explore Construction Work Examples"
-          subtitle="Explore concept representations and illustrative project execution examples for modern building structures."
+          subtitle="Browse construction portfolio images and illustrative project examples from Awka and the surrounding area."
         />
 
         {/* Filter Buttons */}
@@ -33,7 +36,10 @@ export function Projects() {
           ].map((btn) => (
             <button
               key={btn.value}
-              onClick={() => setFilter(btn.value as 'all' | 'residential' | 'commercial' | 'renovation')}
+              onClick={() => {
+                setFilter(btn.value as 'all' | 'residential' | 'commercial' | 'renovation');
+                setShowAllProjects(false);
+              }}
               className={`px-4 py-2 rounded text-xs font-semibold transition-colors ${
                 filter === btn.value
                   ? 'bg-[#111827] text-white'
@@ -47,9 +53,9 @@ export function Projects() {
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProjects.map((project) => (
+          {visibleProjects.map((project) => (
             <div
-              key={project.id}
+              key={project.image}
               className="bg-white rounded-lg overflow-hidden border border-gray-200 shadow-sm flex flex-col justify-between"
             >
               <div>
@@ -57,6 +63,8 @@ export function Projects() {
                   <img
                     src={project.image}
                     alt={project.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                   {project.isIllustrative && (
@@ -89,6 +97,18 @@ export function Projects() {
             </div>
           ))}
         </div>
+        {filteredProjects.length > 9 && (
+          <div className="mt-10 text-center">
+            <button
+              type="button"
+              onClick={() => setShowAllProjects((showAll) => !showAll)}
+              className="rounded bg-[#111827] px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#DC2626]"
+              aria-expanded={showAllProjects}
+            >
+              {showAllProjects ? 'Show fewer images' : `View all ${filteredProjects.length} images`}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
