@@ -44,16 +44,16 @@ export interface BusinessConfig {
     answer: string;
   }>;
   WorkVideo: Array<{
-  id: string;
-  title: string;
-  category: 'residential' | 'commercial' | 'structural' | 'renovation' | 'other';
-  location: string;
-  description: string;
-  thumbnail: string;
-  videoUrl: string; // Embeddable YouTube/Vimeo link or direct MP4 URL
-  isIllustrative: boolean;
-  duration: string;
- }>
+    id: string;
+    title: string;
+    category: 'residential' | 'commercial' | 'structural' | 'renovation' | 'other';
+    location: string;
+    description: string;
+    thumbnail: string;
+    videoUrl: string; // Embeddable YouTube/Vimeo link or direct MP4 URL
+    isIllustrative: boolean;
+    duration: string;
+  }>;
 }
 
 export const siteConfig: BusinessConfig = {
@@ -142,7 +142,7 @@ export const siteConfig: BusinessConfig = {
     },
     {
       id: 'proj-3',
-      title: 'Modern Renovation Work',
+      title: 'Modern Renovation Work 01',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -150,8 +150,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-4',
+      title: 'Modern Renovation Work 02',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -159,8 +159,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-5',
+      title: 'Modern Renovation Work 03',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -168,8 +168,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-6',
+      title: 'Modern Renovation Work 04',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -177,8 +177,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-7',
+      title: 'Modern Renovation Work 05',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -186,8 +186,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-8',
+      title: 'Modern Renovation Work 06',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -195,8 +195,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-9',
+      title: 'Modern Renovation Work 07',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -204,8 +204,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-10',
+      title: 'Modern Renovation Work 08',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -213,8 +213,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-11',
+      title: 'Modern Renovation Work 09',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -222,8 +222,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-12',
+      title: 'Modern Renovation Work 10',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -231,8 +231,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-13',
+      title: 'Modern Renovation Work 11',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -240,8 +240,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-14',
+      title: 'Modern Renovation Work 12',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -249,8 +249,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-15',
+      title: 'Modern Renovation Work 13',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -258,8 +258,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-16',
+      title: 'Modern Renovation Work 14',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -267,8 +267,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-17',
+      title: 'Modern Renovation Work 15',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -276,8 +276,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-18',
+      title: 'Modern Renovation Work 16',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -285,8 +285,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-19',
+      title: 'Modern Renovation Work 17',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -294,8 +294,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-20',
+      title: 'Modern Renovation Work 18',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -303,8 +303,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-21',
+      title: 'Modern Renovation Work 19',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -312,8 +312,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-22',
+      title: 'Modern Renovation Work 20',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -321,8 +321,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-23',
+      title: 'Modern Renovation Work 21',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -330,8 +330,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-24',
+      title: 'Modern Renovation Work 22',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -339,8 +339,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-25',
+      title: 'Modern Renovation Work 23',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -348,8 +348,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-26',
+      title: 'Modern Renovation Work 24',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -357,8 +357,8 @@ export const siteConfig: BusinessConfig = {
       isIllustrative: true,
     },
     {
-      id: 'proj-3',
-      title: 'Modern Renovation Work',
+      id: 'proj-27',
+      title: 'Modern Renovation Work 25',
       category: 'renovation',
       location: 'Awka, Anambra State',
       description: 'Illustrative showcase of structural modifications and building finishing.',
@@ -389,116 +389,115 @@ export const siteConfig: BusinessConfig = {
     },
   ],
   WorkVideo: [
-  {
-    id: 'vid-1',
-    title: 'Modern Villa Foundation & Structural Framing',
-    category: 'residential',
-    location: 'Awka, Anambra State',
-    description: 'Walkthrough of site excavation, rebar layout, and concrete column casting for a residential multi-story villa.',
-    thumbnail: '/img/project1.jpg',
-    videoUrl: '/vids/video1.mp4', // Replace with your video link
-    isIllustrative: true,
-    duration: '02:45',
-  },
-  {
-    id: 'vid-2',
-    title: 'Commercial Office Slab Casting & Progress',
-    category: 'commercial',
-    location: 'Awka, Anambra State',
-    description: 'On-site execution video showcasing floor slab reinforcement and concrete pumping operations.',
-    thumbnail: '/img/project2.jpg',
-    videoUrl: '/vids/video2.mp4', // Replace with your video link
-    isIllustrative: true,
-    duration: '03:15',
-  },
-  {
-    id: 'vid-3',
-    title: 'Residential Interior & Exterior Finishing',
-    category: 'renovation',
-    location: 'Awka, Anambra State',
-    description: 'Detailed showcase of wall rendering, ceiling fitting, and tiling progress on a completed residential property.',
-    thumbnail: '/img/project3.jpg',
-    videoUrl: '/vids/video3.mp4',
-    isIllustrative: true,
-    duration: '01:50',
-  },
-  {
-    id: 'vid-4',
-    title: 'Construction Site Footage 04',
-    category: 'other',
-    location: 'Awka, Anambra State',
-    description: 'Construction footage from the Super Shelter media gallery.',
-    thumbnail: '/img/project4.jpg',
-    videoUrl: '/vids/video4.mp4',
-    isIllustrative: true,
-    duration: '',
-  },
-  {
-    id: 'vid-5',
-    title: 'Construction Site Footage 05',
-    category: 'other',
-    location: 'Awka, Anambra State',
-    description: 'Construction footage from the Super Shelter media gallery.',
-    thumbnail: '/img/project5.jpg',
-    videoUrl: '/vids/video5.mp4',
-    isIllustrative: true,
-    duration: '',
-  },
-  {
-    id: 'vid-6',
-    title: 'Construction Site Footage 06',
-    category: 'other',
-    location: 'Awka, Anambra State',
-    description: 'Construction footage from the Super Shelter media gallery.',
-    thumbnail: '/img/project6.jpg',
-    videoUrl: '/vids/video6.mp4',
-    isIllustrative: true,
-    duration: '',
-  },
-  {
-    id: 'vid-7',
-    title: 'Construction Site Footage 07',
-    category: 'other',
-    location: 'Awka, Anambra State',
-    description: 'Construction footage from the Super Shelter media gallery.',
-    thumbnail: '/img/project7.jpg',
-    videoUrl: '/vids/video7.mp4',
-    isIllustrative: true,
-    duration: '',
-  },
-  {
-    id: 'vid-8',
-    title: 'Construction Site Footage 08',
-    category: 'other',
-    location: 'Awka, Anambra State',
-    description: 'Construction footage from the Super Shelter media gallery.',
-    thumbnail: '/img/project8.jpg',
-    videoUrl: '/vids/video8.mp4',
-    isIllustrative: true,
-    duration: '',
-  },
-  {
-    id: 'vid-9',
-    title: 'Construction Site Footage 09',
-    category: 'other',
-    location: 'Awka, Anambra State',
-    description: 'Construction footage from the Super Shelter media gallery.',
-    thumbnail: '/img/project9.jpg',
-    videoUrl: '/vids/video9.mp4',
-    isIllustrative: true,
-    duration: '',
-  },
-  {
-    id: 'vid-10',
-    title: 'Construction Site Footage 10',
-    category: 'other',
-    location: 'Awka, Anambra State',
-    description: 'Construction footage from the Super Shelter media gallery.',
-    thumbnail: '/img/project10.jpg',
-    videoUrl: '/vids/video10.mp4',
-    isIllustrative: true,
-    duration: '',
-  },
-
-],
+    {
+      id: 'vid-1',
+      title: 'Modern Villa Foundation & Structural Framing',
+      category: 'residential',
+      location: 'Awka, Anambra State',
+      description: 'Walkthrough of site excavation, rebar layout, and concrete column casting for a residential multi-story villa.',
+      thumbnail: '/img/project1.jpg',
+      videoUrl: '/vids/video1.mp4', // Replace with your video link
+      isIllustrative: true,
+      duration: '02:45',
+    },
+    {
+      id: 'vid-2',
+      title: 'Commercial Office Slab Casting & Progress',
+      category: 'commercial',
+      location: 'Awka, Anambra State',
+      description: 'On-site execution video showcasing floor slab reinforcement and concrete pumping operations.',
+      thumbnail: '/img/project2.jpg',
+      videoUrl: '/vids/video2.mp4', // Replace with your video link
+      isIllustrative: true,
+      duration: '03:15',
+    },
+    {
+      id: 'vid-3',
+      title: 'Residential Interior & Exterior Finishing',
+      category: 'renovation',
+      location: 'Awka, Anambra State',
+      description: 'Detailed showcase of wall rendering, ceiling fitting, and tiling progress on a completed residential property.',
+      thumbnail: '/img/project3.jpg',
+      videoUrl: '/vids/video3.mp4',
+      isIllustrative: true,
+      duration: '01:50',
+    },
+    {
+      id: 'vid-4',
+      title: 'Construction Site Footage 04',
+      category: 'other',
+      location: 'Awka, Anambra State',
+      description: 'Construction footage from the Super Shelter media gallery.',
+      thumbnail: '/img/project4.jpg',
+      videoUrl: '/vids/video4.mp4',
+      isIllustrative: true,
+      duration: '02:10',
+    },
+    {
+      id: 'vid-5',
+      title: 'Construction Site Footage 05',
+      category: 'other',
+      location: 'Awka, Anambra State',
+      description: 'Construction footage from the Super Shelter media gallery.',
+      thumbnail: '/img/project5.jpg',
+      videoUrl: '/vids/video5.mp4',
+      isIllustrative: true,
+      duration: '01:45',
+    },
+    {
+      id: 'vid-6',
+      title: 'Construction Site Footage 06',
+      category: 'other',
+      location: 'Awka, Anambra State',
+      description: 'Construction footage from the Super Shelter media gallery.',
+      thumbnail: '/img/project6.jpg',
+      videoUrl: '/vids/video6.mp4',
+      isIllustrative: true,
+      duration: '03:00',
+    },
+    {
+      id: 'vid-7',
+      title: 'Construction Site Footage 07',
+      category: 'other',
+      location: 'Awka, Anambra State',
+      description: 'Construction footage from the Super Shelter media gallery.',
+      thumbnail: '/img/project7.jpg',
+      videoUrl: '/vids/video7.mp4',
+      isIllustrative: true,
+      duration: '02:30',
+    },
+    {
+      id: 'vid-8',
+      title: 'Construction Site Footage 08',
+      category: 'other',
+      location: 'Awka, Anambra State',
+      description: 'Construction footage from the Super Shelter media gallery.',
+      thumbnail: '/img/project8.jpg',
+      videoUrl: '/vids/video8.mp4',
+      isIllustrative: true,
+      duration: '01:55',
+    },
+    {
+      id: 'vid-9',
+      title: 'Construction Site Footage 09',
+      category: 'other',
+      location: 'Awka, Anambra State',
+      description: 'Construction footage from the Super Shelter media gallery.',
+      thumbnail: '/img/project9.jpg',
+      videoUrl: '/vids/video9.mp4',
+      isIllustrative: true,
+      duration: '02:20',
+    },
+    {
+      id: 'vid-10',
+      title: 'Construction Site Footage 10',
+      category: 'other',
+      location: 'Awka, Anambra State',
+      description: 'Construction footage from the Super Shelter media gallery.',
+      thumbnail: '/img/project10.jpg',
+      videoUrl: '/vids/video10.mp4',
+      isIllustrative: true,
+      duration: '03:10',
+    },
+  ],
 };
