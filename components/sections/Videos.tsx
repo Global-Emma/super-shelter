@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { siteConfig, BusinessConfig } from '@/data/siteConfig';
 import { Play, X, MapPin, Clock, Info } from 'lucide-react';
+import Image from 'next/image';
 
 const videoCategories = ['all', 'residential', 'commercial', 'structural', 'renovation', 'other'] as const;
 
@@ -23,18 +24,7 @@ export function Videos() {
     { label: 'Other Footage', value: 'other' },
   ];
 
-  const videoList = siteConfig.WorkVideo.map((video, index) => ({
-    ...video,
-    id: video.videoUrl,
-    title: index < 3 ? video.title : `Construction Site Footage ${String(index + 1).padStart(2, '0')}`,
-    category: index < 3 ? video.category : 'other' as const,
-    description:
-      index < 3
-        ? video.description
-        : 'Construction footage from the Super Shelter media gallery.',
-    thumbnail: `/img/project${index + 1}.jpg`,
-    duration: index < 3 ? video.duration : '',
-  }));
+  const videoList = siteConfig.WorkVideo;
 
   const filteredVideos =
     filter === 'all'
@@ -74,7 +64,7 @@ export function Videos() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredVideos.map((video) => (
               <motion.div
-                key={video.videoUrl}
+                key={video.id}
                 className="bg-[#F3F5F7] rounded-xl overflow-hidden border border-gray-200 shadow-sm flex flex-col justify-between group hover:border-[#DC2626]/40 transition-colors"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -84,7 +74,7 @@ export function Videos() {
                 <div>
                   {/* Video Thumbnail Area */}
                   <div className="relative h-56 bg-black overflow-hidden">
-                    <img
+                    <Image
                       src={video.thumbnail}
                       alt={video.title}
                       loading="lazy"
