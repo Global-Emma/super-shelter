@@ -1,3 +1,4 @@
+// components/layout/Footer.tsx
 import Link from 'next/link';
 import Image from 'next/image';
 import { Phone, MapPin, MessageSquare } from 'lucide-react';
@@ -5,7 +6,8 @@ import { siteConfig } from '@/data/siteConfig';
 import { buildWhatsAppLink } from '@/lib/utils';
 
 export function Footer() {
-  const currentYear = new Date().getFullYear();
+  // Hardcode or use a static constant to allow static site generation (SSG)
+  const currentYear = 2026;
 
   return (
     <footer className="bg-[#111827] text-gray-300 border-t border-gray-800">
@@ -15,7 +17,13 @@ export function Footer() {
           <div className="space-y-4">
             <Link href="#hero" className="flex items-center gap-3 group">
               <div className="relative w-12 h-10 bg-white rounded-md flex items-center justify-center overflow-hidden border border-gray-200 shadow-sm shrink-0 p-0.5">
-                <Image src="/logo.png" alt={`${siteConfig.name} Logo`} fill sizes="48px" className="object-contain" />
+                <Image
+                  src="/logo.png"
+                  alt={`${siteConfig.name} Logo`}
+                  fill
+                  sizes="48px"
+                  className="object-contain"
+                />
               </div>
               <div>
                 <span className="block font-bold text-lg leading-tight tracking-wider text-white">
@@ -84,7 +92,10 @@ export function Footer() {
                 <li className="flex items-center gap-2.5">
                   <MessageSquare className="w-4 h-4 text-green-500 shrink-0" />
                   <a
-                    href={buildWhatsAppLink('Hello Super Shelter Construction Ltd, I would like to make an enquiry.', siteConfig.whatsappPhone)}
+                    href={buildWhatsAppLink(
+                      'Hello Super Shelter Construction Ltd, I would like to make an enquiry.',
+                      siteConfig.whatsappPhone
+                    )}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-white transition-colors"
