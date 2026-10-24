@@ -75,7 +75,7 @@ export const siteConfig: BusinessConfig = {
     plusCode: '63G7+JP Awka',
     full: 'Oby Okoli, Temp Site, Awka 420110, Anambra State, Nigeria',
   },
-  domain: process.env.NEXT_PUBLIC_SITE_URL || 'https://supershelter.com.ng',
+  domain: process.env.NEXT_PUBLIC_SITE_URL || 'https://super-shelter.com',
   socials: {}, // Leave empty until confirmed
   services: [
     {
